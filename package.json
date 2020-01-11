@@ -1,0 +1,25 @@
+{
+  "name": "houdea.github.io",
+  "version": "1.0.0",
+  "description": "Dependencies for My personal website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/houdea/houdea.github.io.git"
+  },
+  "author": "Andrew Houde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/houdea/houdea.github.io/issues"
+  },
+  "homepage": "https://github.com/houdea/houdea.github.io#readme"
+}
