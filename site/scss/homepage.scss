@@ -2,6 +2,16 @@
 @import "compass/css3";
 @import "compass/reset";
 
+/* FONT IMPORTED */
+
+/* Fira Sans */
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+/*Set smooth scroll*/
+html {
+	scroll-behavior: smooth;
+}
+
 
 // n is number of stars required
 @function multiple-box-shadow($n) {
@@ -31,11 +41,74 @@ $shadows-big:    multiple-box-shadow(100);
   -webkit-text-fill-color: transparent;
 }
 
-.homepage-background {
-  min-height: 937px;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  background-size: cover;
+/////////////////Header and navigation//////////////////////////////////////////////////////////////////
+.header {
+  height: 40px;
+  //background-color: red;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: inline-block;
+
+}
+
+/** HEADER */
+
+/** NAVIGATION BAR */
+ nav {
+  z-index: 1;
   overflow: hidden;
+  //background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  ul {
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    li {
+      display: inline;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 17px;
+      a {
+        color: #111;
+        border-radius: 25px;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        text-decoration: none;
+        padding: 14px;
+        background-color: #f2f2f2;
+        &:hover {
+          color: #f2f2f2;
+          border-radius: 25px;
+          background-color: rgb(46, 46, 46);
+        }
+        &.active {
+          color: #f2f2f2;
+          border-radius: 25px;
+          background-color: #111;
+        }
+      }
+    }
+  }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+.homepage-background {
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width:100%;
+  min-height: 900px;
 }
 
 //Front stars in animation
@@ -101,9 +174,8 @@ $shadows-big:    multiple-box-shadow(100);
   color: #FFF;
   text-align: center;
   font-family: 'lato',sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 50px;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
   margin-top: -60px;
-  padding-left: 10px;
 }
